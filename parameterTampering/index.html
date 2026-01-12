@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hi">Hello   </h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero laborum perferendis quasi sint! Perspiciatis minus in, voluptates, amet natus labore sint, dignissimos iure impedit vitae quo quisquam eaque explicabo iste?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+    <ul>
+        <li></li>
+        <li></li>
+    </ul>
+
+        <input type=text id="userInput" placeholder='Enter Text' name=search><br><br>
+
+        <button id="submit" class=button>Submit</button>
+
+        <script>
+            let text;
+
+            document.getElementById('submit').onclick = function() {
+                text = document.getElementById('userInput').value;
+
+                document.getElementById('hi').textContent = `${text}`
+            }
+        </script>
+
+
+    <br><br><button><a href="page2.html">go to page 2</a></button><br><br>
+
+    <button><a href="xss_demo.html">go to xss demo</a></button><br><br>
+
+
+    <form action=/ method=GET>
+        <input type=text placeholder='Search the blog...' name=search>
+        <button type=submit class=button>Search</button>
+    </form>
+</body>
+</html>

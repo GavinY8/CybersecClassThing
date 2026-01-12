@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>XSS Demo 2026</title>
+</head>
+<body>
+<h1>Search Results</h1>
+<p id="display">You searched for: </p>
+
+<input type="text" id="searchBox" placeholder="Type something...">
+<button onclick="search()">Search</button>
+
+<script>
+  function search() {
+    let input = document.getElementById('searchBox').value;
+    // VULNERABILITY: Directly injecting input into the page
+    document.getElementById('display').innerHTML = "You searched for: " + input;
+  }
+</script>
+</body>
+</html>
