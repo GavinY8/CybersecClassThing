@@ -6,10 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="example admin page idk">other page</h1>
+    <h1 id="example page">other page</h1>
     <button type=submit class=button1>Search</button>
     <button type=submit class=button2>Search</button>
     <button type=submit class=button3>Search</button>
     <button type=submit class=button4>Search</button>
+    <h3>can you find the secret third page?</h3><br>
+    <h3>hint: parameter tampering</h3><br><br>
+
+    <h3 id="answer">Click button below for answer</h3>
+    <button id="getAnswer" class=button>Get Answer</button>
+
+    <script>
+        let text;
+
+        document.getElementById('getAnswer').onclick = function() {
+            document.getElementById('answer').textContent = `change page2 in the URL to page3`
+        }
+    </script>
 </body>
 </html>
